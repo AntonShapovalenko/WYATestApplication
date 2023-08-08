@@ -13,7 +13,7 @@ class MapsViewModel @Inject constructor(
     private val placesUseCase: PlacesUseCase
 ) : ViewModel() {
 
-    fun getPlaces() = placesUseCase.invoke().stateIn(
+    val places = placesUseCase.invoke().stateIn(
         viewModelScope, SharingStarted.Eagerly, Result.success(
             emptyList()
         )

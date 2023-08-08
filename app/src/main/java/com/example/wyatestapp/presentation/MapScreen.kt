@@ -28,7 +28,7 @@ import com.google.maps.android.compose.rememberMarkerState
 fun MapScreen(
 ) {
     val viewModel: MapsViewModel = hiltViewModel()
-    val allPlaces by viewModel.getPlaces().collectAsState()
+    val allPlaces by viewModel.places.collectAsState()
     val uiSettings = remember {
         MapUiSettings(zoomControlsEnabled = false)
     }
