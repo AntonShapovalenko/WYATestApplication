@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WYATestApp</string>
+
+    <string name="error_message">Something went wrong</string>
+</resources>
